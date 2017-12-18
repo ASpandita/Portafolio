@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recorrido</title>
+	<link rel="stylesheet" type="text/css" href="css/registro.css">
+</head>
+<body>
+	<div id="formulario4">
+	<form action="recorrido.php" method="POST">
+		<table align="center">
+			<tr>
+				<td colspan="2" class="titulo"><label for="header">Registro Recorrido</label></td>
+			</tr>
+
+			<tr>
+				<td><label>Zona</label></td>
+				<td><input list="zona" name="zona"></input>
+					<datalist id="zona">
+						<option value="Norte"></option>
+						<option value="Centro"></option>
+						<option value="Sur"></option>
+					</datalist></td>
+			</tr>
+
+			<tr>
+				<td><label for="grupo">Grupo:</label></td>
+				<td><input type="text" id="id" name="id"></td>
+			</tr>
+
+			<tr>
+				<td valign="top"><label for="recorrido">Recorrido:</label></td>
+				<td><textarea name="reco" cols="20" rows="5"></textarea></td>
+			</tr>
+
+			<tr>
+				<td valign="top"><label for="obse">Observacion:</label></td>
+				<td><textarea name="obse" cols="20" rows="5"></textarea></td>
+			</tr>
+
+			<tr>
+				<td><label for="time">Hora inicio:</label></td>
+				<td><input type="time" id="time" name="horai"></td>
+			</tr>
+
+			<tr>
+				<td><label for="time">Hora Finalizada:</label></td>
+				<td><input type="time" id="time" name="horaf"></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="Registrar" id="boton"></input>
+					<input type="button" value="Salir" onClick=location.href='menu.html'></input>
+				</td>
+			</tr>
+	</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registrar Falta</title>
+	<link rel="stylesheet" type="text/css" href="css/registro.css">
+</head>
+<body>
+	<div id="formulario5">
+	<form action="falta.php" method="POST">
+		<table align="center">
+			<tr>
+				<td colspan="2" class="titulo"><label for="header">Registrar Falta</label></td>
+			</tr>
+
+			<tr>
+				<td><label>Cedula:</label></td>
+				<td><input type="text" name="cedula" placeholder="Sin puntos" required="required"></td>
+			</tr>
+
+			<tr>
+				<td><label>Turno:</label></td>
+				<td><input list="turno" name="turno" required="required"></input>
+					<datalist id="turno">
+						<option value="Diurno"></option>
+						<option value="Mixto"></option>
+						<option value="Nocturno"></option>
+					</datalist></td>
+			</tr>
+
+			<tr>
+				<td><label>Fecha:</label></td>
+				<td><input type="date" name="fecha" required="required"></td>
+			</tr>
+
+			<tr>
+				<td><label for="motivo">Motivo:</label></td>
+				<td><input type="radio" name="motivo" value="ausencia de personal de vigilancia" required="required"/>Ausencia del personal de vigilancia<br>
+				<input type="radio" name="motivo" value="abandono de servicios por parte del personal de vigilancia" required="required"/>Abandono de servicios por parte del personal de vigilancia<br>
+				<input type="radio" name="motivo" value="retardo del personal" required="required"/>Retardo del personal<br>
+				<input type="radio" name="motivo" value="redoble del turno de vigilancia" required="required"/>Redoble del turno de vigilancia
+
+				</td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="Registrar" id="boton"></input>
+					<input type="button" value="Salir" onClick=location.href='menu.html'></input>
+				</td>
+			</tr>
+		</table>
+	</form>
+	</div>
+</body>
+</html>

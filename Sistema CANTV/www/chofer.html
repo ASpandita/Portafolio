@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro Chofer</title>
+	<link rel="stylesheet" type="text/css" href="css/registro.css">
+</head>
+<body>
+<div id="formulario3">
+	<form name="registro" action="chofer.php" method="POST">
+		<table align="center">
+			<tr>
+				<td colspan="2" class="titulo"><label for="header">Registro chofer</label></td>
+			</tr>
+
+			<tr>
+				<td><label for="id">ID:</label></td>
+				<td><input type="text" id="id" name="id"></td>
+			</tr>
+
+			<tr>
+				<td><label for="ci">Cedula:</label></td>
+				<td><input type="text" id="ci" name="ci" placeholder="Sin puntos"></td>
+			</tr>
+
+			<tr>
+				<td><label for="name">Nombre:</label></td>
+				<td><input type="text" id="nombre" name="nombre" ></input></td>
+			</tr>
+
+			<tr>
+				<td><label for="ape">Apellido:</label></td>
+				<td><input name="apellido"></input></td>
+			</tr>
+
+			<tr>
+				<td><label for="sex">Sexo</label></td>
+				<td><input list="sex" name="sexo"></input></td>
+				<datalist id="sex">
+					<option value="Femenino"></option>
+					<option value="Masculino"></option>
+				</datalist>
+			</tr>
+
+			<tr>
+				<td><label for="date">Fecha de ingreso:</label></td>
+				<td><input type="date" name="fecha"></input></td>
+			</tr>
+
+			<tr>
+				<td><label for="cell">Telefono de contacto:</label></td>
+				<td><input name="celular"></input></td>
+			</tr>
+
+			<tr>
+				<td><label for="marca">Marca de automovil:</label></td>
+				<td><input type="text" id="marca" name="marca"></td>
+			</tr>
+				<td><label for="modelo">Modelo:</label></td>
+				<td><input type="text" id="model" name="modelo"></td>
+			<tr>
+				<td><label for="placa">Placa:</label></td>
+				<td><input type="text" id="placa" name="placa"></td>
+			</tr>
+
+			<tr>
+				<td><label for="ayu">Cedula Ayudante:</label></td>
+				<td><input type="text" name="ci2"></td>
+			</tr>
+
+			<tr>
+				<td><label>Nombre Ayudante:</label></td>
+				<td><input type="text" name="nombreayu"></td>
+			</tr>
+
+			<tr>
+				<td><label>Apellido Ayudante:</label></td>
+				<td><input type="text" name="apellidoayu"></td>
+			</tr>
+
+			<tr>
+				<td><label>Telefono Ayudante:</label></td>
+				<td><input type="text" name="celularayu"></td>
+			</tr>
+
+			<tr>
+				<td><label>Foto:</label></td>
+				<td><input type="file" name="foto" value="Subir foto"></input></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="Registrar" id="boton"></input>
+					<input type="button" value="Salir" onClick=location.href='menu.html'></input>
+				</td>
+			</tr>
+		</table>
+	</form>
+	</div>
+</body>
+</html>

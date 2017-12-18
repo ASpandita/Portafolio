@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modificacion - Seguridad Fisica</title>
+<link rel="stylesheet" type="text/css" href="css/registro.css">
+</head>
+<body>
+	<div id="formulario">
+	<form action="segufisica2.php" method="POST">
+	<table align="center">
+			<tr>
+				<td colspan="2" class="titulo"><label for="header">Modificar Seguridad Fisica</label></td>
+			</tr>
+
+			<tr>
+				<td><label>Cedula:</label></td>
+				<td><input type="text" id="id" name="id" placeholder="Sin puntos"></td>
+			</tr>
+
+			<tr>
+				<td><label>Nombre:</label></td>
+				<td><input type="text" id="nombre" name="nombre"></td>
+			</tr>
+
+			<tr>
+				<td><label>Apellido:</label></td>
+				<td><input type="text" id="apellido" name="apellido"></input></td>
+			</tr>
+
+			<tr>
+				<td><label>Telefono de contacto:</label></td>
+				<td><input type="text" id ="celular" name="celular"></td>
+			</tr>
+
+			<tr>
+				<td><label for="sex">Sexo</label></td>
+				<td><input list="sex" name="sexo"></input></td>
+				<datalist id="sex">
+					<option value="Femenino"></option>
+					<option value="Masculino"></option>
+				</datalist>
+			</tr>
+
+			<tr>
+				<td valign="top"><label for="address">Direccion</label></td>
+				<td><textarea name="direccion" cols="20" rows="5"></textarea></td>
+			</tr>
+
+			<tr>
+				<td><label for="date">Fecha de ingreso:</label></td>
+				<td><input type="date" name="fecha"></input></td>
+			</tr>
+
+			<tr>
+				<td><label for="cargo">Cargo</label></td>
+				<td><input type="text" name="cargo"></td>
+			</tr>
+
+			<tr>
+				<td><label for="servicio">Puesto de servicio</label></td>
+				<td><input type="text" name="puesto"></td>
+			</tr>
+
+			<tr>
+				<td><label>Tipo de instalacion:</label></td>
+				<td><input list="tipoinstalacion" name="tipo"></input>
+					<datalist id="tipoinstalacion">
+						<option value="Central"></option>
+						<option value="Movil"></option>
+						<option value="Central Operativa"></option>
+						<option value="O.E.P"></option>
+						<option value="OAC Movilnet"></option>
+						<option value="MTX"></option>
+						<option value="URL"></option>
+						<option value="Oficina Administrativa Movilnet"></option>
+						<option value="ERB"></option>
+						<option value="Repetidora"></option>
+					</datalist></td>
+			</tr>
+
+			<tr>
+				<td><label>Nombre de la instalacion:</label></td>
+				<td><input list="instalacion" name="nombreInsta"></input>
+					<datalist id="instalacion">
+						<option value="Urdaneta">C01</option>
+						<option value="La Lago">C14</option>
+						<option value="Bella Vista III">C03</option>
+						<option value="Bella Vista I-II">C02</option>
+						<option value="Delicias, Maracaibo">C11</option>
+						<option value="Fronteras">C07</option>
+						<option value="Coquivacoa">C04</option>
+						<option value="Los Olivos">C09</option>
+						<option value="San Miguel">C12</option>
+						<option value="Industrias">C10</option>
+						<option value="San Francisco">C06</option>
+						<option value="San Felipe">C13</option>
+						<option value="La Villa">C20</option>
+						<option value="Machiques">C21</option>
+						<option value="Cabimas">C24</option>
+						<option value="Las Cabillas">C27</option>
+						<option value="Delicias Nueva, Cabimas">C26</option>
+						<option value="Ciudad Ojeda">C25</option>
+						<option value="Paraguaipoa">C41</option>
+						<option value="Los Haticos">C15</option>
+						<option value="Cuatricentenario">C17</option>
+						<option value="Panamericano">C16</option>
+						<option value="Amparo">C43</option>
+						<option value="El Trebol">C08</option>
+						<option value="La Cañada">C19</option>
+						<option value="Santa Cruz de Mara">C28</option>
+						<option value="Tamare de Mara">C05</option>
+						<option value="El Mojan">C18</option>
+						<option value="Santa Rita">C22</option>
+						<option value="Sabaneta">C48</option>
+						<option value="Urdaneta">C60</option>
+						<option value="Bella Vista">C30</option>
+						<option value="Salto Angel">C53</option>
+						<option value="Sambil">C63</option>
+						<option value="Cabimas Center">C66</option>
+						<option value="Tierra Negra">C29</option>
+						<option value="Lago MAR">C36</option>
+						<option value="La Concepcion">C35</option>
+						<option value="Campo Boscan">C67</option>
+						<option value="Bachaquero">C39</option>
+						<option value="La Lago Movilnet">C31</option>
+						<option value="Puertos de Altagracia">C23</option>
+						<option value="Tamare Ojeda">C68</option>
+						<option value="Begote">C46</option>
+						<option value="El Tablazo">C44</option>
+					</datalist></td>
+			</tr>
+
+			<tr>
+				<td><label>Codigo instalacion</label></td>
+				<td><input type="text" name="codigo" required="required"></input></td>
+			</tr>
+			
+			<tr>
+				<td><label>Foto</label></td>
+				<td><input type="file" name="foto"></input></td>
+			</tr>
+				
+			<tr>
+				<td><input type="submit" value="Modificar" id="boton"></input>
+					<input type="button" value="Salir" onClick=location.href='menu.html'></input>
+
+				</td>
+			</tr>
+		</table>
+	</form>
+	</div>
+</body>
+</html>
