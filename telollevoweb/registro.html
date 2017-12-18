@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Te lo llevo </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FreeHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.cO" />
+
+
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Prata" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/redi.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+
+	<script>function formulario(f) { 
+		if (f.nombre.value   == '') { alert ('Por favor escriba su nombre');  
+			f.nombre.focus(); return false; }
+		if (f.apellido.value   == '') { alert ('Por favor escriba su apellido');  
+			f.apellido.focus(); return false; } 
+		if (f.phone.value   == '') { alert ('Por favor escriba su Telefono');  
+			f.phone.focus(); return false; } 
+		if (f.pass.value   == '') { alert ('Por favor escriba su contraseña');  
+			f.pass.focus(); return false; } 									 
+		if (f.correo.value  == '') { alert ('El email esta vacío, por favor escriba su correo'); 
+			f.correo.focus(); return false; }
+		if (f.modelo.value   == '') { alert ('ingrese un modelo de vehiculo');  
+			f.modelo.focus(); return false; } 
+		if (f.placa.value  == '') { alert ('ingrese la placa del vehiculo'); 
+			f.placa.focus(); return false; } return true; } 
+	</script>
+
+
+
+	</head>
+	<body>
+	<header role="banner" id="fh5co-header">
+		
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<!-- Mobile Toggle Menu Button -->
+					<a href="index.html" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+
+					<a class="navbar-brand" href="index.html"><span>Te lo  llevo</span></a> 
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html"><span onclick="home()">Inicio</span></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</nav>
+ 
+	</header>
+
+	
+	
+
+	<section id="fh5co-footer"  style="background-image: url(images/back.jpg); background-size: 100%; background-repeat: no-repeat;" role="contentinfo">
+		
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-10 col-md-offset-1 to-animate">
+					<h3 class="section-title">Registro</h3>
+
+
+	
+
+					<form class="contact-form" method="post" onsubmit="return formulario(this)" action="api/registro.php">
+						<div class="form-group">
+							<label for="name" class="sr-only">Nombre</label>
+							<input type="name" name="nombreT" class="form-control" id="nombre" placeholder="Nombre">
+						</div>
+						<div class="form-group">
+							<label for="name" class="sr-only">Apellido</label>
+							<input type="name" name="apellidoT" class="form-control" id="apellido" placeholder="Apellido">
+						</div>
+						<div class="form-group">
+							<label for="name" class="sr-only">Cedula</label>
+							<input type="name" name="cedulaT" class="form-control" id="cedula" placeholder="Cedula">
+						</div>
+						<div class="form-group">
+							<label for="phone" class="sr-only">Telefono</label>
+							<input type="phone" name="telefonoT" class="form-control" id="phone" placeholder="Telefono">
+						</div>
+						<div class="form-group">
+							<label for="email" class="sr-only">Correo</label>
+							<input type="email" name="correoT" class="form-control" id="correo" placeholder="Correo">
+						</div>
+						<div class="form-group">
+							<label for="name" class="sr-only">Pass</label>
+							<input type="password" name="passT" class="form-control" id="pass" placeholder="Pass">
+						</div>
+						<div class="form-group">
+							<label for="name" class="sr-only">Marca</label>
+							<select type="name" name="marcaT" class="form-control" id="marca" placeholder="Marca"></select>
+						</div>
+						<div class="form-group">
+							<label for="name" class="sr-only">Modelo</label>
+							<select type="name" name="modeloT" class="form-control" id="modelo" placeholder="Modelo"></select>
+						</div>
+						<div class="form-group">
+							<label for="name" class="sr-only">Placa</label>
+							<input type="name" name="placaT" class="form-control" id="placa" placeholder="Placa">
+						</div>
+						
+						<div class="form-group">
+							<input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Registrar">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+	<script src="js/modelos.js"></script>
+	</body>
+</html>
+
